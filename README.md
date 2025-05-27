@@ -24,10 +24,10 @@ https://fish-friends-aebae.web.app/
 /raspi ラズパイ実装コード  
 /website-backend 機械学習実装コード  
 /website-frontend ウェブサイト実装コード   
-  /editpage お魚のプロフィール編集画面  
-  /homepage プロフィール入力、管理画面  
-  /profilepage プロフィール表示画面   
+ー/editpage お魚のプロフィール編集画面  
+ー/homepage プロフィール入力、管理画面  
+ー/profilepage プロフィール表示画面   
   
-  /unitychatpage お魚としゃべることができる画面  
-    /C#script ビルドする前のunityでのコード
+ー/unitychatpage お魚としゃべることができる画面  
+  ー/C#script ビルドする前のunityでのコード
 
