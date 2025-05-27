@@ -29,5 +29,5 @@ https://fish-friends-aebae.web.app/
 ー/profilepage プロフィール表示画面   
   
 ー/unitychatpage お魚としゃべることができる画面  
-  ー/C#script ビルドする前のunityでのコード
+ーー/C#script ビルドする前のunityでのコード
 
