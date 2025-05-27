@@ -12,4 +12,11 @@ yolov8
 
 ## 実装
 firebase
+https://fish-friends-aebae.web.app/
+
+
+
+## プロジェクト概要
+このリポジトリには、プロコン2024で使用するコードや資料をまとめています。
+
 
