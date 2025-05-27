@@ -6,12 +6,12 @@
 - メンバー3:専攻科2年　金地(アドバイザー)
 
 ## 使用技術・言語
-python,c#,html,css,js
-flask
+python,c#,html,css,js  
+flask  
 yolov8
 
 ## 実装
-firebase
+firebase  
 https://fish-friends-aebae.web.app/
 
 
