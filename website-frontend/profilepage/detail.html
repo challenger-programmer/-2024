@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detail.css">
+    <title>プロフィール管理</title>
+</head>
+<body>
+    <div class="wave">
+        <canvas id="waveCanvas"></canvas>
+    </div>
+    <div id="back">
+        <div class="container">
+            <h1>プロフィール</h1>
+            <form id="profileForm">
+                <ul class="profile-list">
+                    <li><strong>名前:</strong><span id="name"></span></li>
+                    <li><strong>品種:</strong><span id="kind"></span></li>
+                    <li><strong>生まれた日:</strong><span id="birthday"></span></li>
+                    <li><strong>活発度:</strong><span id="activity"></span></li>
+                    <li><strong>性格:</strong><span id="chara"></span></li>
+                    <li><strong>詳細:</strong><span id="detail"></span></li>
+                </ul>
+            </form>
+            <div class="button-container">
+                <button id="editButton">編集</button>
+                <button id="backButton">戻る</button>
+            </div>
+        </div>
+        <div class="aquarium">
+            <img src="watergrass.png" alt="揺らいでいる水草" id="watergrassleft">
+            <img src="watergrass.png" alt="揺らいでいる水草" id="watergrassright">
+            <div class="ground"></div>
+        </div>  
+    </div>
+    <!-- <div class="ground"></div> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="detail.css">
+        <title>プロフィール管理</title>
+    </head>
+    <body>
+        <h1>プロフィール</h1>
+        <form id="profileForm">
+            <li><strong>名前:</strong><span id="name"></span></li>
+            <li><strong>品種:</strong><span id="kind"></span></li>
+            <li><strong>生まれた日:</strong><span id="birthday"></span></li>
+            <li><strong>活発度:</strong><span id="activity"></span></li>
+            <li><strong>性格:</strong><span id="chara"></span></li>
+            <li><strong>詳細:</strong><span id="detail"></span></li>
+        </form>
+        <div id="">
+            <button id="editButton">編集</button>
+            <button id="backButton">戻る</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="detail.js"></script>
+    </body>
+</html> -->

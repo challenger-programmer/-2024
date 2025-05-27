@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity WebGL Player | VR_fast</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="modal" id="tutorial-modal">
+      <div class="modal-content">
+          <h2>名前を付けてください</h2>
+          <p>次に進むには名前を入力してください。</p>
+          <form id="fishFormUpdate">
+            <label for="name-input1">魚の名前 1:</label>
+            <select name="name-input1" id="name-input1"></select>
+            <label for="name-input2">魚の名前 2:</label>
+            <select name="name-input2" id="name-input2"></select>
+            <label for="name-input3">魚の名前 3:</label>
+            <select name="name-input3" id="name-input3"></select>
+            <input type="submit" id="name-input" value="送信">
+          </form>
+      </div>
+    </div>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+      </div>
+    </div>
+    <div>
+      <form id="roomForm">
+        <label for="roomName1">部屋の名前 1:</label>
+        <input type="text" name="" id="roomName1" value="" placeholder="部屋の名前" required>
+        <label for="roomName2">部屋の名前 2:</label>
+        <input type="text" name="" id="roomName2" value="" placeholder="部屋の名前" required>
+        <label for="roomName3">部屋の名前 3:</label>
+        <input type="text" name="" id="roomName3" value="" placeholder="部屋の名前" required>
+        <input type="submit" id="roomNameEnter" value="送信">
+      </form>
+    </div>
+    <div>
+      <form id="fishForm">
+        <label for="fishName1">魚の名前 1:</label>
+        <select name="fishName1" id="fishName1"></select>
+        <label for="fishName2">魚の名前 2:</label>
+        <select name="fishName2" id="fishName2"></select>
+        <label for="fishName3">魚の名前 3:</label>
+        <select name="fishName3" id="fishName3"></select>
+        <input type="submit" id="fishNameEnter" value="送信">
+      </form>
+    </div>
+    <div>
+      <form id="chatForm">
+        <label for="chatFish">おさかなとおしゃべり:</label>
+        <input type="text" id="chatFish" value="" placeholder="おさかなとしゃべろう" required>
+        <input type="submit" value="しゃべる">
+      </form>
+      <button id="finishChat">しゃべるのをやめる</button>
+    </div>
+
+    <div>
+      <div>
+        <p>活発度</p>
+        <!-- if(data.activ_ryukin==1)activity = "元気がない";
+        else if(data.activ_ryukin==2)activity = "あまり元気がない";
+        else if(data.activ_ryukin==3)activity = "少し元気";
+        else activity = "元気いっぱい"; -->
+        <form id="changeActiv">
+          <label for="changeActiv1">魚1：</label>
+          <select name="changeActiv1" id="changeActiv1">
+            <option value="元気いっぱい">元気いっぱい</option>
+            <option value="少し元気">少し元気</option>
+            <option value="あまり元気がない">あまり元気がない</option>
+            <option value="元気がない">元気がない</option>
+          </select>
+          <label for="changeActiv2">魚2：</label>
+          <select name="changeActiv2" id="changeActiv2">
+            <option value="元気いっぱい">元気いっぱい</option>
+            <option value="少し元気">少し元気</option>
+            <option value="あまり元気がない">あまり元気がない</option>
+            <option value="元気がない">元気がない</option>
+          </select>
+          <label for="changeActiv3">魚3：</label>
+          <select name="changeActiv3" id="changeActiv3">
+            <option value="元気いっぱい">元気いっぱい</option>
+            <option value="少し元気">少し元気</option>
+            <option value="あまり元気がない">あまり元気がない</option>
+            <option value="元気がない">元気がない</option>
+          </select>
+          <input type="submit" value="変える">
+        </form>
+      </div>
+      <div>
+        <p>性格</p>
+        <form id="changeChara">
+          <label for="changeChara1"></label>
+          <input type="text" name="changeChara1" placeholder="最後が「という子」になるようにしてください" required>
+          <label for="changeChara2"></label>
+          <input type="text" name="changeChara2" placeholder="最後が「という子」になるようにしてください" required>
+          <label for="changeChara3"></label>
+          <input type="text" name="changeChara3" placeholder="最後が「という子」になるようにしてください" required>
+          <input type="submit" value="変える">
+      </form>
+      </div>
+    </div>
+
+    <button id="infoUpdate">更新</button>
+    
+    <button id="back">戻る</button>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    
+
+   </body>
+</html>

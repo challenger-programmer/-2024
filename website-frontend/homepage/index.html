@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fish.css">
+    <title>プロフィール管理</title>
+    <!-- <link rel="stylesheet" href="fish.css"> -->
+</head>
+<body>
+    <h1>プロフィール管理</h1>
+    <form id="profileForm">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="kind">品種:</label>
+        <input type="text" id="kind" name="kind" required>
+        <br>
+        <button type="submit">保存</button>
+    </form>
+    <h2>保存されたプロフィール</h2>
+    <div id="searchFish">
+        <div>
+            <label for="sortOrder">並べ替え順:</label>
+            <select id="sortOrder">
+                <option value="enter">入力順</option>
+                <option value="name">名前順</option>
+                <option value="kind">品種順</option>
+            </select>
+        </div>
+        <div>
+            <div class="open-btn"></div><!--開閉ボタン-->
+            <div id="search-wrap"><!--表示エリアのHTML開閉ボタンをクリックするたび、search-wrap に表示用のクラス名が付与・除去されて付与の場合出現します。-->
+                <form role="search" method="get" id="searchform" action="">
+                    <label for="search-text1">名前:</label>
+                    <input type="text" value="" name="" id="search-text1" placeholder="search">
+                    <label for="search-text2">品種:</label>
+                    <input type="text" value="" name="" id="search-text2" placeholder="search">
+                    <input type="submit" id="searchsubmit" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+        
+
+    <ul id="profileList"></ul>
+
+    <div id="fishContainer"></div>
+
+    <button id="fish3D">おさかなとおしゃべり</button>
+    
+    <canvas id="waveCanvas"></canvas>
+    <!-- <canvas id="waveCanvas2"></canvas>
+    <canvas id="waveCanvas3"></canvas> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="fish.js"></script>
+</body>
+</html>

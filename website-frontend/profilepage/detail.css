@@ -1,0 +1,136 @@
+/* フォントと基本設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave {
+    height: 200px;
+}
+
+#back {
+    width: 100%;
+    background-color: #43c0e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    width: 50vw;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 6px 6px 6px #27282b;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* プロフィールリストスタイル */
+.profile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-list li:last-child {
+    border-bottom: none;
+}
+
+.profile-list strong {
+    font-weight: bold;
+    color: #555;
+}
+
+/* ボタンスタイル */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+.aquarium {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px; /* プロフィールとの距離を設定 */
+    background-color: transparent; /* 透明な背景 */
+}
+
+#watergrassleft, #watergrassright {
+    position: absolute;
+    height: 40vh;
+    bottom: 20px; /* groundの高さに合わせる */
+    animation: sway 5s ease-in-out infinite alternate;
+    transform-origin: bottom center;
+}
+#watergrassright {
+    right: 5%;
+}
+
+#watergrassleft {
+    left: 5%;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* 平地の高さ */
+    background-color: #784f17; /* 土の色 */
+}
+
+@keyframes sway {
+    0% {
+        transform: translateY(0) rotate(-2deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+}

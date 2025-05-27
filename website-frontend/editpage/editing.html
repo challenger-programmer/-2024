@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editing.css">
+    <title>プロフィール管理</title>
+</head>
+<body>
+    <div class="container">
+        <h1>プロフィール</h1>
+        <form id="profileForm">
+            <ul class="profile-list">
+                <li><strong>名前:</strong><input type="text" placeholder="入力してください" id="name"></li>
+                <li><strong>品種:</strong><input type="text" placeholder="入力してください" id="kind"></li>
+                <li><strong>生まれた日:</strong><input type="date" id="birthday"></li>
+                <li><strong>活発度:</strong><input type="text" placeholder="まだ反映されていません" id="activity" readonly></li>
+                <li><strong>性格:</strong><input type="text" placeholder="まだ反映されていません" id="chara" readonly></li>
+                <li><strong>詳細:</strong><textarea placeholder="入力してください" id="detail"></textarea></li>
+            </ul>
+        </form>
+        <div class="button-container">
+            <button id="button">保存</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="editing.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>プロフィール管理</title>
+    </head>
+    <body>
+        <h1>プロフィール</h1>
+        <form id="profileForm">
+            <li><strong>名前:</strong><input type="text" placeholder="入力してください" id="name"></input></li>
+            <li><strong>品種:</strong><input type="text" placeholder="入力してください" id="kind"></input></li>
+            <li><strong>生まれた日:</strong><input type="date" id="birthday"></input></li>
+            <li><strong>活発度:</strong><input placeholder="入力してください" id="activity"></input></li>
+            <li><strong>性格:</strong><input placeholder="入力してください" id="chara"></input></li>
+            <li><strong>詳細:</strong><textarea placeholder="入力してください" id="detail"></textarea></li>
+        </form>
+        <button id="button">保存</button>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="editing.js"></script>
+    </body>
+</html> -->
