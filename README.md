@@ -13,8 +13,7 @@ chatgptapiを用いたunity実装
 
 ## 実装
 firebase  
-https://fish-friends-aebae.web.app/
-
+[webサイト](https://fish-friends-aebae.web.app/)
 
 
 ## プロジェクト概要
@@ -41,6 +40,8 @@ https://fish-friends-aebae.web.app/
 ## ポスター
 poster.pdf
 
+## ポスター
+[紹介動画](https://youtu.be/_Q69BJcth1M?si=tdEP63QLH9Z6uU9b)
 ## フォルダ構成
 /raspi ラズパイ実装コード  
 /website-backend 機械学習実装コード  
