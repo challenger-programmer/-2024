@@ -38,7 +38,7 @@ firebase
 仕組みや処理の概要は、ポスター資料にてわかりやすくまとめています。
 
 ## 詳細
-ポスター　poster.pdf 
+ポスター　poster.pdf  
 [紹介動画](https://youtu.be/_Q69BJcth1M?si=tdEP63QLH9Z6uU9b)
 ## フォルダ構成
 /raspi ラズパイ実装コード  
